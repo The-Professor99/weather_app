@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="app.js" defer></script> 
+    <title>My Weather Project: Smash It</title>
+    <!-- [if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif] -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./images/favicon-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json" />
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="header-container">
+                <div class="top-page">
+                    <div class="logo"><a href="#"><img src="./images/android-chrome-192x192.png"/></a></div>
+                    <div class="welcome-note"></div>
+                </div>
+                <div class="search-offline">
+                    <div class="notifier offline-container">
+                    </div>
+                    <div class="notifier geolocation-container">
+                    </div>
+                    <div class="searchbox-container">
+                        <form class="search-form">
+                            <input type="search" id="searchBox" class="search-box" autocomplete="off" placeholder="Type in your location..." />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="day-changer">
+                <a href="#">Today</a>
+            </div>
+            <div class="day-changer">
+                <a href="#">Tomorrow</a>
+            </div>
+        </nav>
+
+        <main class="weather-report">
+            <section class="main-weather-report">
+                <div class="main-weather-report-container">
+                    <div class="icon-container"><img class="icon" src="" alt="weather icon"></img></div>
+                    <div class="location-container">
+                        <h2 class="city">Lagos, NG</h2>
+                        <p class="temperature">27<span><sup>o</sup>C</span></p>
+                        <p class="day">Friday</p>
+                        <p class="date">11 September 2020</p>
+                    </div>
+                </div>
+            </section>
+            <section class="weather-report-breakdown">
+                <div class="weather-report-breakdown-container">
+                    <h2 class="notifier summary"><span class="current-display">Today</span>: <span class="weather">Rain</span>. <span class="current-display">Today</span>'s temperature will be at a minimum of <span class="min">26.37</span><sup>o</sup>C and a maximum of <span class="max">26.91</span><sup>o</sup>C</h2>
+                    <div class="other-data">
+                        <p>Other Data</p>
+                    </div>
+                    <div class="summary-table-container">
+                        <table>
+                            <tr>
+                            <th>Sunrise Time</th>
+                            <td class="sunrise">6:37:48</td>
+                            </tr>
+                            <tr>
+                            <th>Sunset Time</th>
+                            <td class="sunset">18:48:32</td>
+                            </tr>
+                            <tr>
+                                <th>Humidity</th>
+                                <td class="humidity">76%</td>
+                            </tr>
+                            <tr>
+                                <th>Weather</th>
+                                <td class="weather-description">Light Rain</td>
+                            </tr>
+                            <tr>
+                                <th>Wind</th>
+                                <td class="wind">5.57m/s</td>
+                            </tr>
+                            <tr>
+                                <th>Cloudiness</th>
+                                <td class="cloudiness">99%</td>
+                            </tr>
+                            <tr>
+                                <th>Visibility</th>
+                                <td class="visibility">10000m</td>
+                            </tr>
+                            <tr>
+                                <th>Pressure</th>
+                                <td class="pressure">1009hPa</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>       
+        </main>
+
+        <footer>
+            <a href="https://linkedin.com/154233">LinkedIn Holder</a>
+            |
+            <a href="https://github.com/upcomin">GitHub Holder</a>
+        </footer>
+    </div>
+</body>
+</html>
