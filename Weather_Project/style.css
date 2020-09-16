@@ -10,11 +10,11 @@ html {
 }
 html, 
 body {
+    background-color: rgba(32, 169, 223, 1);
     position: relative;
     height: 100%;
-    font-family: 'Rubik', sans-serif;
-    background: url("./images/background-1858848_640.jpg");
-    color: white;
+    font-family: 'Merriweather', serif;
+    color: rgba(255, 255, 255, 1);
 }
 img {
     max-width: 100%;
@@ -22,106 +22,152 @@ img {
 a {
     cursor: pointer;
 }
+input {
+    border: none;
+}
 
 /* Main styling starts here */
 .page-container {
-    width: 90%;
     margin: auto;
+    width: 90%;
+}
+.top-page{
+    margin-top: 0.8rem;
 }
 .logo img{
     width: 3rem;
     height: 2rem;
 }
 .welcome-note {
+    background-color: rgba(31, 31, 249, 1);
     margin-top: 1.2rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    height: max-content;
+    color: rgb(255, 255, 255,1);
     text-align: center;
-    border-radius: 0 0 30% 30%;
-    /* background-color: rgb(0, 0, 0, 0); */
-    box-shadow: 0px 4px 5px rgba(243, 238, 243, 0.7);
-    /* background-color: rgb(230, 153, 255, 0.4); */
-    background-color: rgb(230, 153, 255);
+    font-weight: 600;
+}
+.welcome-note p{
+    margin: 0;
+    padding: 0.4rem;
 }
 .notifier {
     background-color: rgba(230, 0, 0, 0.8);
-    width: 111.1%;
-    margin-left: -5.55%;
-    color: rgba(255, 255, 255, 1);   
-    padding-left: 5.55%;
+    font-size: 1.2rem;
+    font-weight: 600;   
+}
+.notifier p {
+    padding: 0 0.3rem 0.2rem 0.5rem;
 }
 .searchbox-container {
-    position: relative;
-    background-color: white;
-    display: flex;
-    margin: auto;
-    border-radius: 2rem;
-    padding-left: 1rem;
-    padding-top: 0.3rem;
-    width: 50%;
-    height: 2rem;
-}
-input {
-    border: none;
-}
-input[type="search"] {
-    color: red;
-    /* padding-left: 0.3rem; */
-    background-color: rgba(209, 26, 50, 0);
-    width: 90%;
-    font-size: 1rem;
-    /* height: 80%; */
-}
-nav{
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    /* margin: auto; */
-}
-.day-changer, .other-data {
-    border-radius: 20%;
-    box-shadow: 2px 3px 5px blue;
-    background-color: rgb(230, 153, 255);
-    margin: auto;
     text-align: center;
-    padding: 0.3rem;
-    font-size: 0.8rem;
+}
+.searchbox-container p {
+    margin-top: 0;
     font-weight: 600;
 }
-.other-data {
-    width: 30%;
-}
-.day-changer a{
-    color: white;
-}
-.icon-container {
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    height: 10rem;
+.search-form {
+    margin-bottom: 2rem;
     text-align: center;
 }
-img.icon {
-    width: 9rem;
+input[type="search"] {
+    border-radius: 2rem;
+    padding: 0.2rem;
+    padding-left: 1rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    color: blue;
+}
+input[type="search"]:focus {
+    color: black;
+}
+.icon-container {
+    background-color: rgba(31, 31, 249, 1);
+    margin-bottom: 2rem;
+    border: 5px solid rgba(255, 255, 255, 1);
+    border-radius: 2rem;
+    text-align: center;
+}
+.icon {
+    display: inline-block;
+    width: 15rem;
 }
 .location-container {
-    background-color: rgba(255, 255, 250, 0.2);
-    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 1);
+    border: 5px solid rgba(31, 31, 249, 1);
+    border-radius: 2rem;
+    color: rgba(31, 31, 249, 1);
 }
-.location-container > *{
+.location-sub-container {
+    background-color: rgba(31, 31, 249, 1);
+    margin: 1rem auto;
+    border: 2px solid white;
+    border-radius: 1.9rem;
+    box-shadow: 5px 1px 3px 5px rgba(31, 31, 249, 1);
+    padding: 0.9rem 0rem;
+    width: 60%;
+    color: white;
     text-align: center;
 }
 .city {
+    margin: 0;
     font-size: 2rem;
     text-align: center;
 }
-
 .temperature {
     font-size: 3rem;
     text-align: center;
 }
-table {
-    width: 90%;
-    margin: auto;
+.date {
+    margin-bottom: 0;
+}
+.weather-report-breakdown{
+    background-color: rgba(31, 31, 249, 1);
     margin-top: 2rem;
+    border: 5px solid rgba(255, 255, 255, 1);
+    border-radius: 2rem;
+    padding: 1rem;
+    color: rgba(255, 255, 255, 1);
+}
+.weather-report-breakdown-container {
+    padding-bottom: 0.2rem;
+}
+.summary{
+    margin-left: 0;
+    width: inherit;
+    white-space: pre-wrap;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.weather {
+    display: inline-block;
+    font-size: 1.1rem;
+    white-space: pre-wrap;
+}
+.other-data {
+    margin: auto;
+    border: 0.15rem solid rgba(255, 255, 255, 1);
+    border-radius: 20%;
+    padding: 0.3rem;
+    width: 30%;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.table-container {
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 2rem;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 2rem;
+    box-shadow: 0 0 0.63rem 0.2rem rgba(31, 31, 249, 1) inset;
+    padding: 1rem;
+    color: rgba(31, 31, 249, 1);
+}
+table {
+    margin: auto;
+    width: 90%;
 }
 th {
     width: 75%;
@@ -129,16 +175,8 @@ th {
     text-align: left;
 }
 footer {
-    text-align: center;
-}
-.weather-report-breakdown{
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
-    color: white;
-    padding-bottom: 1rem;
-}
-footer {
     margin-top: 2rem;
+    text-align: center;
 }
 
 @media all and (min-width: 1024px) {
@@ -148,18 +186,40 @@ footer {
     }
     .welcome-note {
         margin-top: 0;
-        border-radius: none;
+        width: 30%;
     }
     .weather-report {
         display: flex;
         justify-content: space-around;
+        align-items: center;
+    }
+    .main-weather-report {
+        width: 40%;
     }
     .weather-report-breakdown {
+        margin-top: 0;
+        height: 37rem;
         width: 50%;
-    }
+    }  
     .summary {
-        width: inherit;
-        margin-left: 0;
-        padding-left: 0;
+        margin: auto;
+        margin-top: 1rem;
+        border: 0.5rem solid;
+        padding: 1rem;
+        width: 80%;
+        height: 11rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.2rem;
+    } 
+    .weather {
+        font-size: 3rem;
+    }
+    .min,
+    .max {
+        font-size: 2rem;
+    }
+    .other-data {
+        margin-top: 2rem;
     }
 }

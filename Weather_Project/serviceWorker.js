@@ -1,12 +1,12 @@
 const staticWeatherApp = "weather-app-site-v1";
 const assets = [
     ".",
+    "./index.html",
     "./style.css",
-    "./main.js",
-    "./images/favicon-512x512.png",
-    "./images/favicon-192x192.png",
-    "./images/favicon-180x180.png",
-    "./images/favicon-192x192.png",
+    "./app.js",
+    "./images/android-chrome-512x512.png",
+    "./images/android-chrome-192x192.png",
+    "./images/favicon.ico",
     "./images/favicon-32x32.png",
     "./images/favicon-16x16.png",
     "./images/apple-touch-icon.png"

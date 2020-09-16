@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Charset and viewport meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
-    <meta name="theme-color" content="#db4938" />
-    <link href="normalize.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="app.js" defer></script> 
+
+    <!-- Title -->
     <title>My Weather Project: Smash It</title>
+
+    <!-- SEO -->
+    <meta name="title" content="My Weather Project: Smash It">
+    <meta name="description" content="A weather app that returns weather data in real time">
+    <meta name="keywords" content="weather, app, openweather, temperature, weather api">
+    <meta name="author" content="Festus Ihechi">
+    <link rel="author" href="https://github.com/Upcomin/">
+    <link rel="canonical" href="https://weather-app-bd081.web.app/">
+
+    <!-- ios meta tags and app theme color -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar" content="black-translucent" />
+    <meta name="theme-color" content="transparent" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    
+    <!-- StyleSheets -->
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" /> 
+
+    <!-- HTML5 support for older browsers -->
     <!-- [if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
     </script>
     <![endif] -->
+
+    <!-- Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="./images/favicon-512x512.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./images/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+
+    <!-- Manifest -->
     <link rel="manifest" href="./manifest.json" />
+
+    <!-- Javascript -->
+    <script src="app.js" defer></script>
 </head>
 <body>
     <div class="page-container">
@@ -26,7 +54,8 @@
             <div class="header-container">
                 <div class="top-page">
                     <div class="logo"><a href="#"><img src="./images/android-chrome-192x192.png"/></a></div>
-                    <div class="welcome-note"></div>
+                    <div class="welcome-note">
+                    </div>
                 </div>
                 <div class="search-offline">
                     <div class="notifier offline-container">
@@ -41,34 +70,28 @@
                 </div>
             </div>
         </header>
-        <nav>
-            <div class="day-changer">
-                <a href="#">Today</a>
-            </div>
-            <div class="day-changer">
-                <a href="#">Tomorrow</a>
-            </div>
-        </nav>
 
         <main class="weather-report">
             <section class="main-weather-report">
                 <div class="main-weather-report-container">
                     <div class="icon-container"><img class="icon" src="" alt="weather icon"></img></div>
                     <div class="location-container">
-                        <h2 class="city">Lagos, NG</h2>
-                        <p class="temperature">27<span><sup>o</sup>C</span></p>
-                        <p class="day">Friday</p>
-                        <p class="date">11 September 2020</p>
+                        <div class="location-sub-container">
+                            <h2 class="city">Lagos, NG</h2>
+                            <p class="temperature">27<span><sup>o</sup>C</span></p>
+                            <p class="day">Friday</p>
+                            <p class="date">11 September 2020</p>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="weather-report-breakdown">
                 <div class="weather-report-breakdown-container">
-                    <h2 class="notifier summary"><span class="current-display">Today</span>: <span class="weather">Rain</span>. <span class="current-display">Today</span>'s temperature will be at a minimum of <span class="min">26.37</span><sup>o</sup>C and a maximum of <span class="max">26.91</span><sup>o</sup>C</h2>
+                    <h2 class="summary">Today:<span class="weather"> Rain.</span>Today</span>'s temperature will be at a minimum of <span class="min">26.37</span><sup>o</sup>C and a maximum of <span class="max">26.91</span><sup>o</sup>C</h2>
                     <div class="other-data">
                         <p>Other Data</p>
                     </div>
-                    <div class="summary-table-container">
+                    <div class="table-container">
                         <table>
                             <tr>
                             <th>Sunrise Time</th>
@@ -109,9 +132,9 @@
         </main>
 
         <footer>
-            <a href="https://linkedin.com/154233">LinkedIn Holder</a>
+            <a href="https://www.linkedin.com/in/ihechi-festus-5b5121190/">LinkedIn</a>
             |
-            <a href="https://github.com/upcomin">GitHub Holder</a>
+            <a href="https://github.com/upcomin">GitHub</a>
         </footer>
     </div>
 </body>

@@ -3,8 +3,8 @@
     "short_name": "Smash It",
     "start_url": "./index.html", 
     "display": "standalone",
-    "background_color": "#fdfdfd",
-    "theme_color": "#db4938",
+    "background_color": "rgba(32, 169, 223, 1)",
+    "theme_color": "transparent",
     "description": "A Weather Forecast App",
     "orientation": "portrait-primary", 
     "icons": [
@@ -14,24 +14,29 @@
             "sizes": "180x180"
         },
         {
-            "src":"/android-chrome-192x192.png",
+            "src":"./images/android-chrome-192x192.png",
             "sizes":"192x192",
             "type":"image/png"
             
         },
         {
-            "src":"/android-chrome-512x512.png",
+            "src":"./images/android-chrome-512x512.png",
             "sizes":"512x512",
             "type":"image/png"
         },
         {
-            "src":"/android-chrome-32x22.png",
+            "src":"./images/favicon-32x32.png",
             "sizes":"32x32",
             "type":"image/png"
         },
         {
-            "src":"/android-chrome-16x16.png",
+            "src":"./images/favicon-16x16.png",
             "sizes":"16x16",
+            "type":"image/png"
+        },
+        {
+            "src":"./images/favicon.ico",
+            "sizes": "48x48",
             "type":"image/png"
         }
     ]
