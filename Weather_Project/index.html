@@ -19,7 +19,7 @@
     <!-- ios meta tags and app theme color -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar" content="black-translucent" />
-    <meta name="theme-color" content="transparent" />
+    <meta name="theme-color" content="#002233" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet" />
@@ -53,7 +53,7 @@
         <header>
             <div class="header-container">
                 <div class="top-page">
-                    <div class="logo"><a href="#"><img src="./images/android-chrome-192x192.png"/></a></div>
+                    <div class="logo"><a href="#"><img alt="Company Logo" src="./images/android-chrome-192x192.png"/></a></div>
                     <div class="welcome-note">
                     </div>
                 </div>
@@ -64,7 +64,8 @@
                     </div>
                     <div class="searchbox-container">
                         <form class="search-form">
-                            <input type="search" id="searchBox" class="search-box" autocomplete="off" placeholder="Type in your location..." />
+                            <label for="searchBox" class="visually-hidden">Search For a Location</label>
+                            <input type="search" id="searchBox" role="searchbox" class="search-box" autocomplete="off" placeholder="Type in your location..." />
                         </form>
                     </div>
                 </div>
@@ -92,7 +93,7 @@
                         <p>Other Data</p>
                     </div>
                     <div class="table-container">
-                        <table>
+                        <table role="table">
                             <tr>
                             <th>Sunrise Time</th>
                             <td class="sunrise">6:37:48</td>
@@ -132,9 +133,9 @@
         </main>
 
         <footer>
-            <a href="https://www.linkedin.com/in/ihechi-festus-5b5121190/">LinkedIn</a>
+            <a role="link" href="https://www.linkedin.com/in/ihechi-festus-5b5121190/">LinkedIn</a>
             |
-            <a href="https://github.com/upcomin">GitHub</a>
+            <a role="link" href="https://github.com/upcomin">GitHub</a>
         </footer>
     </div>
 </body>

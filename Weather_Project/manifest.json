@@ -3,8 +3,8 @@
     "short_name": "Smash It",
     "start_url": "./index.html", 
     "display": "standalone",
-    "background_color": "rgba(32, 169, 223, 1)",
-    "theme_color": "transparent",
+    "background_color": "#20a9df",
+    "theme_color": "#002233",
     "description": "A Weather Forecast App",
     "orientation": "portrait-primary", 
     "icons": [
